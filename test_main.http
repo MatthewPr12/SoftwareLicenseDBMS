@@ -1,0 +1,61 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+
+# Test GET request to home endpoint
+GET http://localhost:8000/
+Accept: text/html
+
+###
+
+# Test POST request to execute_query endpoint with valid query
+POST http://localhost:8000/
+Content-Type: application/x-www-form-urlencoded
+
+query=SELECT * FROM customers;
+
+###
+# Get the add product form page
+GET http://localhost:8000/add_product/
+Accept: text/html
+
+# Response should be successful and contain the add product form
+HTTP/1.1 200 OK
+...
+
+<html>
+...
+</html>
+
+
+###
+# Test GET request to view all products
+GET http://localhost:8000/view_products/
+Accept: text/html
+
+
+###
+# Test GET request to show delete product form
+GET http://localhost:8000/delete_product/
+Accept: text/html
+
+###
+# Test POST request to delete a product
+POST http://localhost:8000/delete_product/
+Content-Type: application/x-www-form-urlencoded
+
+product_id=10
+
+# pay attention that ProductID is used as foreign key in another tables, so deleting it may cause error
+# because other tables may depend on specific product
+
+
+

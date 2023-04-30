@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>View License Agreements</title>
+    </head>
+    <body>
+        <h1>View License Agreements</h1>
+        <table>
+            <tr>
+                <th>License Agreement ID</th>
+                <th>Product ID</th>
+                <th>License Agreement Column</th>
+            </tr>
+            {% for license_agreement in license_agreements %}
+            <tr>
+                <td>{{ license_agreement[0] }}</td>
+                <td>{{ license_agreement[1] }}</td>
+                <td>{{ license_agreement[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

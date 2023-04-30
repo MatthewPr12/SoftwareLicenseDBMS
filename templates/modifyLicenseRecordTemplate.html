@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modify License Record</title>
+</head>
+<body>
+    <h2>Modify License Record</h2>
+    <form action="/modify_license_record/" method="post">
+        <label for="license_record_id">License Record ID:</label>
+        <input type="number" id="license_record_id" name="license_record_id" required>
+        <br><br>
+        <label for="license_agreement_id">License Agreement ID:</label>
+        <input type="number" id="license_agreement_id" name="license_agreement_id">
+        <br><br>
+        <label for="usage_data">Usage Data:</label>
+        <textarea id="usage_data" name="usage_data"></textarea>
+        <br><br>
+        <label for="compliance_status">Compliance Status:</label>
+        <select id="compliance_status" name="compliance_status">
+            <option value="Compliant">Compliant</option>
+            <option value="Non-Compliant">Non-Compliant</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Modify">
+    </form>
+</body>
+</html>

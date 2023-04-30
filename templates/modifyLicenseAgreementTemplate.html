@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modify License Agreement</title>
+</head>
+<body>
+    <h2>Modify License Agreement</h2>
+    <form action="/modify_license_agreement/" method="post">
+        <label for="license_agreement_id">License Agreement ID:</label>
+        <input type="number" id="license_agreement_id" name="license_agreement_id" required>
+        <br><br>
+        <label for="product_id">Product ID:</label>
+        <input type="number" id="product_id" name="product_id">
+        <br><br>
+        <label for="license_text">License Text:</label>
+        <input type="text" id="license_text" name="license_text">
+        <br><br>
+        <input type="submit" value="Modify">
+    </form>
+</body>
+</html>

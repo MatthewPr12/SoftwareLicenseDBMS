@@ -1,0 +1,29 @@
+<!-- add_product.html -->
+<h1>Add Product</h1>
+<form action="/add_product/" method="post">
+    <label for="product_id">Product ID:</label>
+    <input type="number" id="product_id" name="product_id" required>
+    <br>
+    <label for="product_name">Product Name:</label>
+    <input type="text" id="product_name" name="product_name" required>
+    <br>
+    <label for="release_date">Release Date:</label>
+    <input type="date" id="release_date" name="release_date" required>
+    <br>
+    <label for="product_price">Product Price:</label>
+    <input type="number" id="product_price" name="product_price" required>
+    <br>
+    <label for="software_requirements">Software Requirements:</label>
+    <textarea id="software_requirements" name="software_requirements" required></textarea>
+    <br>
+    <label for="hardware_requirements">Hardware Requirements:</label>
+    <textarea id="hardware_requirements" name="hardware_requirements" required></textarea>
+    <br>
+    <label for="product_version">Product Version:</label>
+    <input type="text" id="product_version" name="product_version" required>
+    <br>
+    <label for="product_description">Product Description:</label>
+    <textarea id="product_description" name="product_description" required></textarea>
+    <br>
+    <button type="submit">Add Product</button>
+</form>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>View License Records</title>
+    </head>
+    <body>
+        <h1>View License Records</h1>
+        <table>
+            <tr>
+                <th>License Record ID</th>
+                <th>License Agreement ID</th>
+                <th>Usage Data</th>
+                <th>Compliance Status</th>
+            </tr>
+            {% for license_record in license_records %}
+            <tr>
+                <td>{{ license_record[0] }}</td>
+                <td>{{ license_record[1] }}</td>
+                <td>{{ license_record[2] }}</td>
+                <td>{{ license_record[3] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
